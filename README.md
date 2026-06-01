@@ -1,2 +1,37 @@
-# kafka-Messaging
-Spring Boot Kafka Demo application demonstrating Producer, Consumer, Topic, Partition, Offset, and Consumer Group concepts. Messages are published through REST APIs and consumed asynchronously using Apache Kafka.
+# Spring Boot Kafka Demo
+
+A simple Kafka project built with Spring Boot to understand core Kafka concepts:
+
+- Kafka Producer
+- Kafka Consumer
+- Kafka Topics
+- Partitions
+- Offsets
+- Consumer Groups
+- JSON Message Serialization
+- REST API Integration
+
+## Flow
+
+Postman → Spring Boot Controller → Kafka Producer → Kafka Topic → Kafka Consumer
+
+## Technologies
+
+- Java 17
+- Spring Boot 3.5
+- Apache Kafka
+- Docker
+- Maven
+
+## API
+
+### Send Order
+
+POST /orders
+
+```json
+{
+  "orderId": "1001",
+  "productName": "Laptop",
+  "quantity": 2
+}
